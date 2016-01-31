@@ -1,0 +1,384 @@
+<p>Formattage :
+    Questions en style heading3
+    Réponses en style normal
+    ctrl+shift+c pour effacer la coloration des lignes</p>
+
+<h3>Pour la notation de question : A REVOIR, les notes sont normalisées</h3>
+
+<pre><code>10 points à répartir sur 3 question et 9 questions/réponses à évaluer pour 30 pts.
+</code></pre>
+
+<ul>
+<li>Donc au final ca fait une distrib en 3, 3, 4 que tu répètes 3x pour l'éval phase 3
+<h1>Partie 1:</h1></li>
+</ul>
+
+<h2>#</h2>
+
+<h3>Sur quels raisonnement s'appuient les moteurs d'inférence ? Donnez des exemples</h3>
+
+<p>Sur des raisonnements déductifs.
+1. Si Allaite_ses_petits alors Mammifère
+2. Si A_des_plumes alors Oiseau
+3. Si Oiseau et non Vole alors Manchot
+4. Si Marin et non Mammifère alors Poisson
+5. Si Très_lourd et Mammifère alors Baleine</p>
+
+<h3>Qu'est le Loebner Prize ?</h3>
+
+<p>Le Loebner Prize est un prix qui donnera 100000 dollars à la première personne qui présentera un ordinateur passant le test de Turing.</p>
+
+<h3>Dans quel chaînage est-il pertinent d'interagir avec l'utilisateur ? Pourquoi ?</h3>
+
+<h3>Quels sont les problèmes essentiellement rencontrées par les Systèmes Experts ?</h3>
+
+<p>la phase de cognition: récupérer la connaissance d'un expert
+- Problèmes de vocabulaire, de représentation des connaissances,
+- la communication expert-informaticien-machine,
+- très lent à mettre en oeuvre si le domaine est vaste</p>
+
+<h3>Expliquer le fonctionnement d’un système expert en chainage arrière ?</h3>
+
+<p>Le Raisonnement est guidé par les buts, on part de ce que l'on cherche à établir, on cherche l'ensemble des règles concluant sur ce fait, et recommence de manière récursive de toutes les prémisses trouvées. Lors de chaque étape on remplace un but par une conjonction ou une disjonction de sous-buts. Ne marche que si l'on connaît le but et seulement si les buts sont finis. Si on tombe sur des fait connus on peut demander à l'utilisateur s'il les connaît.</p>
+
+<h3>Qu'est-ce qu'un codage préfixe ?</h3>
+
+<p>page 9 du diapo dernier paragraphe.</p>
+
+<h2>#</h2>
+
+<p><em>*Dans un système expert, on peut faire du chaînage arrière de plusieurs façons différentes. Lesquelles ? *</em>
+Comme le chaînage arrière est un parcours d'arbre récursif, on peut parcourir l'arbre en profondeur ou en largeur.</p>
+
+<p><strong>Qu'est-ce qui caractérise une explosion combinatoire ? Donnez un exemple.</strong>
+Une explosion combinatoire se caractérise par le fait qu'un changement du nombre de données, même minime, peut rendre le problème très difficile ou impossible a résoudre.
+L'exemple du cours avec le calcul des chemins en est un bon.</p>
+
+<h3>Quel est la différence entre un régime révocable et un régime irrévocable ?</h3>
+
+<p>révocable : chaînage arrière;  irrévocable : chaînage arrière impossible</p>
+
+<h3>Quels sont les quatre éléments composant un système expert ?</h3>
+
+<p>La base de faits, la base de règles, le moteur d'inférence ainsi que l'interface reliée vers l'utilisateur.</p>
+
+<h3>Expliquer pourquoi les systèmes experts ont besoin de cogniticien ?</h3>
+
+<h3>Comment appelle-t-on le raisonnement derrière la phrase suivante : "Si être un homme implique être mortel, alors si Socrate est un homme, alors Socrate est mortel"</h3>
+
+<p>Le Modus-Ponens</p>
+
+<h2>#</h2>
+
+<h3>Qu'est ce que la base de faits d'un système, et comment évolue t-elle ?</h3>
+
+<p>La base de faits est la mémoire du système. Au début, elle contient ce que l'on sait du cas examiné, puis elle est completée par les déductions du moteur d'inférence, ou par les questions posées à l'utilisateur.</p>
+
+<h3>Quelle est la différence entre régime révocable et régime irrévocable ?</h3>
+
+<p>En régime révocable, on peut revenir sur la valeur des faits. En régime irrévocable, les fait changent l'état de manière irrévocable.</p>
+
+<h3>À quoi servent les méta-connaissances dans un système expert ?</h3>
+
+<p>Elles lui permettent de "réfléchir" sur les faits et règles qu'il manipule.</p>
+
+<h3>Que signifie "Chaînage Avant" dans les systèmes experts ?</h3>
+
+<p>Les moteurs a « <em>chaînage avant</em> »  partent des faits et règles de la base de connaissance, et tentent de s'approcher des faits recherchés par le problème.
+Cela signifie qu'on va essayer de déduire un maximum de faits à partir des faits initiaux et de la base de règles, en espérant qu'un des faits que l'on va déduire sera celui qui nous intéresse.</p>
+
+<h3>Expliquer le fonctionnement d'un système à base de règle</h3>
+
+<p>Un système à base de règle, ou système expert, est un logiciel capable de répondre à des questions, en effectuant un raisonnement à partir de faits et de règles connues. Il peut servir notamment comme outil d'aide à la décision.
+Un système expert se compose de 3 parties :
+- une base de faits
+- une base de règles
+- un moteur d'inférence.</p>
+
+<h3>Donner un exemple de raisonnement Modus Ponens.</h3>
+
+<p>Si Socrate est un homme, alors Socrate est mortel.</p>
+
+<h3>En ayant une base de règles et une base de faits, à l'aide de quoi peut-on générer de nouveaux faits ?</h3>
+
+<p>A l'aide d'un moteur d'inférence.</p>
+
+<h3>Quel est en pratique le principal problème lors de l'apprentissage d'un SE ?</h3>
+
+<p>La transmission du savoir de l'expert.</p>
+
+<h3>Comment est apparu le terme "Intelligence Artificielle" ?</h3>
+
+<p>C'était le titre d'une réunion de chercheurs invité par McCarthy à Dartmouth en 1956</p>
+
+<h3>Quel est l'inconvénient d'un régime irrévocable dans une moteur d'inférence ?</h3>
+
+<p>L'inconvénient d'un régime irrévocable est qu'il convient que aux cas où la plupart des chemins mènent à la solution, ce qui est rare.</p>
+
+<h3>Qu'est-ce que le langage LISP ?</h3>
+
+<p>LISP est un langage de programmation fonctionnel créé par Jon McCarthy.C'est l'un des langages les plus répandu en intelligence artificielle.
+Qu'est ce que le méta-connaissance ?
+le méta-connaissance est une connaissance sur une ou des connaissances.</p>
+
+<h1>Partie 2:</h1>
+
+<h3>Quelle est l'astuce qui permet de coder de manière plus compacte des textes dont la fréquence d'apparition des lettres n'est pas équiprobable ?</h3>
+
+<h3>Quelle est l'entropie maximale d'un texte sur un alphabet de 4 lettres?</h3>
+
+<p>2 (00),(01),(11),(10)  4*(-1/4 * log2(1/4))</p>
+
+<h3>Dans quel cas la fonction H (ou S pour les physiciens) est-elle maximale ?</h3>
+
+<p>Lorsque les événements sont équiprobables.
+Quand chaque état à la même probabilité d'apparition.</p>
+
+<h3>Si le texte C est une compression du texte A, quel texte aura l'entropie la plus grande ? Dans ce cas, que fait un algorithme de compression de données en matière d'entropie ?</h3>
+
+<p>Le texte C a une entropie plus faible, car l'algorithme de compression réduit le nombre de bits nécessaire pour encoder un fichier. L'entropie en informatique représentant le nombre de bits minimal pour coder un fichier, le fichier compressé a bien une entropie inférieur. </p>
+
+<h3>Quel est le problème qui survient si un codage n'est pas préfixe ? Citer un exemple</h3>
+
+<p>Il devient impossible de distinger des lettres encodées des autres, car certaines lettres sont le préfixes d'autres.
+Par exemple, le langage Morse de Samuel Morse.</p>
+
+<h3>Soit l'alphabet {a,b} Calculer l'entropie de la chaîne "aabb"</h3>
+
+<p>E =-((1/2)<em>log2(1/2))-((1/2)</em>log2(1/2))
+  = -2 * ((1/2)*log2(1/2)) = 1
+vérification : il faut bien 1 bit pour codé un alphabet de taille 2.</p>
+
+<h3>Soit le texte "abcbc", proposez en calculant l'entropie un code sur 2 bits pour chaque caractère du texte.</h3>
+
+<p>Code a:00,b:01,c:10,d:11 => 00 01 10 01 10(taille = 10) ,E=-(1/3<em>log2(1/3))-(2/3</em>log2(2/3))-(2/3*log2(2/3))=1.308</p>
+
+<h3>Que permet de déterminer un tableau de contingence ?</h3>
+
+<ul>
+<li>Un tableau de contingence permet de déterminer  la dépendance entre 2 caractères
+<h3>Pourquoi l'encodage de l'alphabet en morse nous oblige-t-il à créer un code spécial pour séparer les lettres?</h3></li>
+</ul>
+
+<p>Quelques lettres de l'alphabet morse ont des préfixes d'autres lettres.Par exemple a=._ est préfixe de j=._ _ _ et r=._.</p>
+
+<h2>#</h2>
+
+<h3>Quel est le principe du codage de Huffman ?</h3>
+
+<p>la création d'un arbre déséquilibré où les lettres apparaissent à une profondeur d'autant plus importante qu'elles sont peu fréquentes dans le texte analysé.</p>
+
+<h3>De quel manière obtenons nous un codage préfixe ?</h3>
+
+<p>A l'aide d'un arbre binaire où les lettres sont en position terminale (feuilles)</p>
+
+<h3><strong>Si l'entropie du texte A est supérieure à l'entropie du texte B et si les textes A et B ont la même longueur : quel est le texte qui contiendra le plus d'information ? Le texte A ou le texte B ? (justifiez)</strong></h3>
+
+<p>Le texte A contiendra plus d'informations, car il sera moins "creux" que le texte B. Je pourrai moins comprimer le texte A que le texte B.</p>
+
+<h3>Que dit la deuxième loi de la thermodynamique ?</h3>
+
+<h3>Quelle est l'entropie d'un pile ou face ?</h3>
+
+<h2>#</h2>
+
+<h3>Quel est le problème qui survient si un codage n'est pas préfixe ? Citer un exemple</h3>
+
+<p>Si un codage n'est pas préfixe, deux lettres différentes pourront commencer de la même manière, ce qui fait qu'il faudra séparer les lettres par des espaces. En Morse, "C" s'écrit "_ . _ .", mais "_ ." est la lettre "N". Si l'on ne met pas d'espaces entre les lettres, "_ . _ ." peut se lire "NN" ou "C".</p>
+
+<p><strong>Quelle idée peut-on imaginer pour créer un codage sur un nombre "non entier" de bits ? qui fut le premier à présenter cette idée en 1952 ?</strong>
+C'est David Huffman qui a imaginé cela : coder chaque élément avec un nombre de bit différent, en codant sur moins de bit les éléments les plus fréquents.</p>
+
+<h3><strong>Comment peut-on obtenir facilement un codage préfixe ?</strong></h3>
+
+<h3>Par quoi Shannon remplace-t-il la constante de Boltzmann dans sa théorie de l'information ?</h3>
+
+<p>Par la probabilité d'apparition d'un état.</p>
+
+<h3>Calculer l'entropie pour le texte "hello world".</h3>
+
+<h3>En déduire le nombre minimal de bits pour coder chaque caractère.</h3>
+
+<p>L'entropie est 2.84535, le nombre de bits minimal est donc de 3 par caractère.</p>
+
+<h1>Partie 3:</h1>
+
+<p><strong>Que permet de déterminer un tableau de contingence ?</strong>
+La dépendance entre 2 caractères.</p>
+
+<p><strong>Qu'est-ce qu'un noeud terminal ?</strong>
+Un noeud est dit terminal s'il arrive uniquement sur des feuilles parfaitement discriminées.</p>
+
+<h3>Qu'est-ce que la règle delta ?</h3>
+
+<h3>L'utilisation d'un algorithme CART ou C4,5 donneront-ils les mêmes arbres (à partir de jeux de données identiques) ?</h3>
+
+<h3>A quoi sert le "t" de Tschuprow ?</h3>
+
+<p>Il indique le nombre de dégré de liberté par état.</p>
+
+<h3>Comment peut-on comparer l'indice d'impureté de Gini à l'entropie ?</h3>
+
+<h3>En C4.5, comment choisir une variable discriminante ?</h3>
+
+<p>On choisit la variable avec le plus fort pouvoir discriminant.
+Cette valeur est calculée en faisant la différence entre l'entropie maximale et l'entropie de la variable.  </p>
+
+<p><strong>Que risque-t-on à créer des arbres trop précis / exacts ?</strong>
+on risque le surapprentissage</p>
+
+<h3>Qu'est ce qu'une variable de segmentation ?</h3>
+
+<p>caractéristique qui va être utilisée pour diviser un segment de donnée en segments plus petits.</p>
+
+<p><strong>En quoi les arbres de décision peuvent être utile en IA ?</strong>
+diapo 2 de la partie 3</p>
+
+<p><strong>Est-il plus judicieux de mettre les variables à forte ou à faible entropie au plus proche de la racine, dans un arbre de décision ?</strong>
+L'entropie désigne le niveau de désordre dans un système. Si une entropie est forte, cela signifie que les éléments sont très mélangés. Au contraire, une entropie faible correspond a un système "ordonné". Ainsi, il vaut mieux choisir des variables à faible entropie, afin de mieux segmenter (séparer) les classes.</p>
+
+<h1>Partie 4: Réseaux neuronaux</h1>
+
+<h2>#</h2>
+
+<p>Qu'est-ce qu'une descente de gradient ? A quoi cela sert-il et quel en est le fonctionnement ?</p>
+
+<p>Quel est le problème du Perceptron ?</p>
+
+<h3>Quel est le modèle de réseau neuronal qui est booléen ?</h3>
+
+<h3>Comment se représente le résultat d'un modèle de Kohonen ?</h3>
+
+<h3>Expliquer l'existence d'optimums locaux et exposé une technique permettant de sortir d'un optimum local et de trouver l'optimum globale.</h3>
+
+<p>On est dans un optimum local si tout les candidats voisins à l'optimum local ont un résultat inférieur à l'optimum local. Pour sortir de l'optimum local et trouver l'optimum globale, il faut envisagées un nombre de voisins plus grand, voir l'intégralité du dataset.</p>
+
+<h3>Quel est le problème des réseaux neuronaux en matière de résultat obtenu ?</h3>
+
+<p><em>*Qu'est-ce que la "Widrow's Rule of Thumb" ? Dans quel cas s'applique-t-elle et comment ? *</em>
+La règle dit N=W/e  N est le nombre de données en entrée, qui dépend de W, le nombre de paramètres à optimiser et e l'erreur qu'on juge acceptable. Pour une erreur de 10% et 10 paramètres à optimiser, il faut au minimum  10/0.1 = 100 données.</p>
+
+<p><strong>Comment détermine-t-on le nombre de couches et le nombre de neurones sur les couches intermédiaire d'un réseau de neurones ?</strong></p>
+
+<h3>Qu'elles sont les différence entre la perceptron et la règle Delta ?</h3>
+
+<h3>A quoi sert la fonction logistique / sigmoïde ?</h3>
+
+<p><strong>Pourquoi la règle delta est-elle floue ? Et est-ce bien ou non ?</strong></p>
+
+<p><strong>Quel est le but des Réseaux de Hopfield ? Quelle est leur particularité par rapport aux autres réseaux neuronaux ?</strong>
+Leur but est d'implémenter une mémoire auto-associative, faisant correspondre des entrées à des sorties (identiques aux entrées).Les Réseaux de Hopfield sont plus proches de la mémoire humaine. Ils sont capables de mémoriser des données erronées, ou d'oublier des données.</p>
+
+<h3>Qu'arrive-t-il à un neurone lorsqu'il est trop souvent soumis a un stimulus donné ?</h3>
+
+<p>Le mécanisme d'habituation va permettre au neurone de s'habituer au stimulus venu de la source en question.
+Il faudra un stimulus de plus en plus fort pour continuer à déclencher le neurone. Jusqu'à disparition de la réaction si le mécanisme continu.</p>
+
+<h3>Quel est le problème du Perceptron ?</h3>
+
+<p>Le Perceptron n'arrive pas à généraliser. Il a tendance à apprendre par coeur.</p>
+
+<h3>Comment se représente le résultat d'un modèle de Kohonen ?</h3>
+
+<p>Sous forme d'une carte 2D, d'après les poids associés aux neurones.</p>
+
+<p><strong>Quel est la particularité des réseaux de Hopfield ?</strong>
+Ils sont auto-associative et possedent  la capacité à reconnaître des données bruitées ou partielles,  à mémoriser des choses fausses, et aussi à Oublier.</p>
+
+<h3>Quel est l’intérêt de normaliser les entrées ?</h3>
+
+<p>En normalisant, on favorise une meilleure convergence.</p>
+
+<h2>#</h2>
+
+<h3>Citez trois modèles de réseaux neuronaux ?</h3>
+
+<p>3 Modèles: 1/ McCulloch et Pitts
+           2/ ADALINE
+           3/ Perceptron</p>
+
+<h1>Partie 5:</h1>
+
+<h3>A quoi sert l'algorithme K-means ?</h3>
+
+<h3>Comment est défini les clusters?</h3>
+
+<p>Les clusters sont des partitions ordonnées de données.</p>
+
+<p><strong>Pourquoi l'évolution artificielle est-elle une technique très prometteuse pour l'informatique  moderne ?</strong>
+<em>*   *</em></p>
+
+<h3>Qu'est-ce qu'une méthode d'optimisation "non supervisée" ?</h3>
+
+<hr />
+
+<p><strong>Quel est le principal problème de la méthode K-means ?</strong>
+Il faut dire au préalable combien de centroïdes on va utiliser.</p>
+
+<h2>#</h2>
+
+<h3>Que signifie le terme "épistasie" dans les algorithmes génétiques ?</h3>
+
+<h3>Dans un arbre pondéré, que fait-on aux probabilités le long d'une branche ? On les multiplie ou on les ajoute ?</h3>
+
+<h3>Quel est l'autre nom de la méthode K-means ?</h3>
+
+<p>La méthode K-means est aussi appellée l'algorithme de quantification de Lloyd-Max ou la méthode des plus proches voisins</p>
+
+<h3>A quoi servent les réseaux Bayesien ?</h3>
+
+<h3>D'après le théorème de Bayes, sur une population de 100 000, avec une probabilité de 2% et une fiabilité de 97.2%. Quel est le taux de vrai positif dans la population positive ?</h3>
+
+<p>Les positifs sont au nombre de : 100 000 * .02 = 2 000.
+Décomposés en 1944 vrai positifs (2 000 * .972) , 56 (2 000 * (1-.972) )sont des faux positifs.
+Parmi les 98 000 (100 000 * (1-.02)) négatifs, 2 744 (98 000 * (1-.972)) seront déclarés faussement positifs.
+Le total de positifs est de 2 000 + 2 744 = 4 744
+Le taux de vrai positifs dans la population est de : 2 000 / 4 744 = .42
+Soit 42%</p>
+
+<h3>Dans le cadre du théorème de Bayes, qu'est-ce qu'une probabilité préalable et pourquoi est-elle importante ?</h3>
+
+<p>La probabilité préalable doit être connue à l'avance si l'on veut utiliser le théorème de Bayes pour inverser une proposition. </p>
+
+<h3>Quels sont les trois types de jeux de données utilisés en évolution artificielle?Quels sont leurs rôles?</h3>
+
+<ul>
+<li>1 jeu d'apprentissage, sur lequel on fait évoluer les individus</li>
+<li>1 jeu de tests, pour détecter le sur-apprentissage</li>
+<li>1 jeu d'évaluation, pour évaluer l'individu sur un jeu qui n'a pas participé à l'évolution de l'individu</li>
+</ul>
+
+<h3>Pourquoi est il nécessaire d'utiliser 3 jeux de données pour les algorithmes d’Évolution Artificielle ?</h3>
+
+<p>Le premier jeu est le jeu d'apprentissage.Le deuxième jeu sert à détecter le surapprentissage.Le Troisième sert à l'évaluation.</p>
+
+<h3>Combien de jeux de données différents doit-on avoir pour détecter le sur-apprentissage ?</h3>
+
+<p>Il faut 3 jeux de données :
+    - 1 jeu d'apprentissage
+    - 1 jeu de test
+    - 1 jeu d'évaluation</p>
+
+<h3>Qu'est-ce que l'épistasie ?</h3>
+
+<p>L'épistasie dénote la dépendance entre plusieurs gènes.</p>
+
+<h3>De quoi est constitué le réseau bayésien ?</h3>
+
+<p>Un réseau bayésien représente des variables aléatoires sous la forme d'un graphe orienté acyclique. - Les nœuds sont des variables aléatoires- Les arcs sont des dépendances probabilistes dirigées entre les variables.</p>
+
+<h3>Qu'est-ce qu'un diagramme de Voronoï ?</h3>
+
+<p>C'est un diagramme décrivant des cellules délimitées par les médiatrices entre centroïdes.</p>
+
+<p><strong>le MIT a classé les réseaux bayésiens comme 4e technologie émergente du siècle à venir. Pourquoi selon-vous ? Quels sont les points importants à retenir sur ces types de réseaux ?</strong>
+- ils sont déterministes, parfaits et dynamiques;
+- ils permettent de diagnostiquer et de prédire;
+- mélange entre théorie des graphes et théorie des probabilités;
+- permet de modéliser les connaissances dans des domaines incertains;</p>
+
+<p><strong>Combien de jeux de données faut-il utiliser pour éviter le sur-apprentissage ? Citez-en au moins deux.</strong>
+Selon M. Schoenauer, il faut 3 jeux de données, : 
+- jeu d'apprentissage, sert à instruire l'individu;
+- jeu de test, empêche le sur-apprentissage;
+- jeu de validation, permet de noter l'individu sur des données qu'il n'a pas encore vu.</p>
